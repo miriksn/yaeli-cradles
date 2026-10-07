@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="יעלי עריסות — עריסות מעץ אלון ובדים טבעיים, בעבודת יד. יפות, נעימות ונוחות לניוד בבית.">
+  <title>יעלי עריסות | עריסה טבעית לתינוק</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #F8F4EE;
+      --cream-dark: #EEE6DA;
+      --ink: #3E3933;
+      --muted: #716960;
+      --sage: #89947E;
+      --sage-dark: #68745F;
+      --sand: #D8C8B5;
+      --white: #FFFDF9;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Assistant', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+    }
+
+    h1, h2, h3, .heading {
+      font-family: 'Rubik', sans-serif;
+      color: var(--ink);
+    }
+
+    .serif-note {
+      letter-spacing: .02em;
+    }
+
+    .hero-gradient {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.8), transparent 30%),
+        radial-gradient(circle at 85% 80%, rgba(216,200,181,.28), transparent 35%),
+        var(--cream-dark);
+    }
+
+    .btn {
+      background: var(--sage-dark);
+      color: white;
+      transition: .25s ease;
+    }
+
+    .btn:hover {
+      background: #596451;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(74, 82, 68, .20);
+    }
+
+    .soft-card {
+      background: rgba(255,253,249,.82);
+      border: 1px solid rgba(110,95,80,.10);
+      box-shadow: 0 18px 50px rgba(74, 62, 48, .08);
+    }
+
+    .photo {
+      box-shadow: 0 24px 55px rgba(66, 54, 42, .12);
+    }
+
+    .eyebrow {
+      color: var(--sage-dark);
+      letter-spacing: .10em;
+      font-size: .85rem;
+      font-weight: 600;
+    }
+
+    .feature-number {
+      color: var(--sand);
+      font-family: 'Rubik', sans-serif;
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .fabric-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      border: 2px solid white;
+      box-shadow: 0 0 0 1px rgba(0,0,0,.10);
+    }
+
+    .floating-cta {
+      box-shadow: 0 -8px 30px rgba(40,30,20,.10);
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- Header -->
+  <nav class="absolute top-0 inset-x-0 z-30 px-5 md:px-10 py-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="#" class="heading text-xl font-medium">יעלי עריסות</a>
+      <a href="#contact" class="hidden sm:inline-flex text-sm font-semibold border-b border-[#68745F] pb-1">
+        לפרטים והזמנה
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-gradient min-h-[720px] pt-28 pb-20 px-5 flex items-center">
+    <div class="max-w-6xl mx-auto w-full">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+        <div class="text-center lg:text-right order-2 lg:order-1">
+          <p class="eyebrow mb-5">עריסות בעבודת יד • עץ אלון • כותנה טבעית</p>
+
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-medium leading-[1.08] mb-7">
+            מקום קטן<br>
+            <span class="text-[#68745F]">לעולם החדש.</span>
+          </h1>
+
+          <p class="text-xl sm:text-2xl leading-relaxed text-[#625B54] max-w-xl mx-auto lg:mx-0 mb-9">
+            עריסה טבעית, נעימה וניידת לתינוקות בחודשים הראשונים —
+            יפה בבית, נוחה להורים ועשויה מחומרים שנעים להיות קרובים אליהם.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+            <a href="#catalog"
+               class="btn inline-flex justify-center items-center text-lg font-semibold py-4 px-9 rounded-full">
+              לצפייה במלאי העריסות
+            </a>
+            <a href="#features"
+               class="inline-flex justify-center items-center text-lg font-medium py-4 px-7 rounded-full border border-[#B9AC9D] text-[#5C554E] hover:bg-white/60 transition">
+              למה יעלי?
+            </a>
+          </div>
+
+          <div class="mt-9 flex flex-wrap justify-center lg:justify-start gap-x-7 gap-y-2 text-sm text-[#716960]">
+            <span>✓ עץ אלון</span>
+            <span>✓ 100% כותנה</span>
+            <span>✓ בד ניתן לכביסה</span>
+            <span>✓ קלה לניוד</span>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <div class="relative max-w-xl mx-auto">
+            <div class="absolute -inset-4 rounded-[2rem] bg-white/55 rotate-2"></div>
+            <div class="relative rounded-[1.8rem] overflow-hidden photo bg-white p-2">
+              <img src="images/DSC_8812.jpg"
+                   alt="עריסת יעלי מעץ אלון ובד טבעי"
+                   class="w-full aspect-[4/5] object-cover rounded-[1.45rem]">
+            </div>
+            <div class="absolute -bottom-5 -right-4 sm:right-5 bg-white rounded-2xl px-5 py-4 shadow-xl">
+              <p class="text-sm text-[#716960]">מבחר בדים</p>
+              <p class="font-semibold text-[#3E3933]">לבחירה לפי הטעם שלכם</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="py-20 md:py-28 px-5 bg-[#FFFDF9]">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="eyebrow mb-4">נולדה מתוך צורך אמיתי</p>
+      <h2 class="text-4xl md:text-5xl font-medium leading-tight mb-7">
+        עריסה שנועדה להשתלב<br class="hidden md:block"> בחיים שלכם.
+      </h2>
+      <p class="text-xl leading-relaxed text-[#716960]">
+        היא נמצאת לידכם כשאתם צריכים אותה, עוברת איתכם מחדר לחדר,
+        מתקפלת כשצריך — ונשארת חלק יפה מהבית גם כשהיא עומדת במרכז החדר.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 md:py-28 px-5">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <p class="eyebrow mb-4">הפרטים הקטנים</p>
+        <h2 class="text-4xl md:text-5xl font-medium">מה הופך אותה לכל כך נוחה?</h2>
+      </div>
+
+      <div class="space-y-24">
+
+        <!-- Feature 1 -->
+        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <div class="order-1">
+            <img src="images/DSC_8855.jpg" alt="תינוק בעריסת יעלי" class="photo w-full h-[420px] md:h-[520px] object-cover rounded-[2rem]">
+          </div>
+          <div class="order-2 md:pr-6">
+            <div class="feature-number mb-5">01</div>
+            <h3 class="text-3xl md:text-4xl font-medium mb-5">קרוב גם מהמיטה</h3>
+            <p class="text-xl leading-relaxed text-[#716960]">
+              חלון הצצה מאפשר לראות את התינוק בקלות גם כשאתם שוכבים במיטה.
+              פחות לקום, יותר להיות קרובים.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <div class="order-1 md:order-2">
+            <img src="images/DSC_8900.jpg" alt="עץ אלון ובד כותנה בעריסת יעלי" class="photo w-full h-[420px] md:h-[520px] object-cover rounded-[2rem]">
+          </div>
+          <div class="order-2 md:order-1 md:pl-6">
+            <div class="feature-number mb-5">02</div>
+            <h3 class="text-3xl md:text-4xl font-medium mb-5">טבעית, נעימה ומחבקת</h3>
+            <p class="text-xl leading-relaxed text-[#716960]">
+              העריסה מעוצבת בגודל עוטף ומדויק לתינוק בחודשיו הראשונים. עץ אלון ובדים טבעיים מ־100% כותנה יוצרים מראה חם ומעניקים תחושה מחבקת ובטוחה. הבד ניתן להסרה ולכביסה, כך שהעריסה יכולה להישאר רעננה ונקייה.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <div class="order-1">
+            <img src="images/DSC_8848.jpg" alt="עריסת יעלי קלה לניוד" class="photo w-full h-[420px] md:h-[520px] object-cover rounded-[2rem]">
+          </div>
+          <div class="order-2 md:pr-6">
+            <div class="feature-number mb-5">03</div>
+            <h3 class="text-3xl md:text-4xl font-medium mb-5">נעה איתכם</h3>
+            <p class="text-xl leading-relaxed text-[#716960]">
+              העריסה קלה לפתיחה, לסגירה ולניוד ממקום למקום.
+              אפשר ליהנות מנדנוד עדין, ובמידת הצורך לקבע את העריסה כך שלא תתנדנד.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fabrics Intro -->
+  <section class="py-20 px-5 bg-[#EEE6DA]">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="eyebrow mb-4">הטאץ' שלכם</p>
+          <h2 class="text-4xl md:text-5xl font-medium mb-6">בוחרים את הבד שמתאים לכם.</h2>
+          <p class="text-xl leading-relaxed text-[#716960] mb-7">
+            העריסה היא גם פריט בחדר. לכן אפשר לבחור מתוך מגוון בדים ודוגמאות,
+            וליצור עריסה שמתאימה לבית ולטעם שלכם. כל העריסות במלאי מיוצרות מעץ אלון מלא וכותנה טבעית.
+          </p>
+          <a href="#catalog" class="btn inline-flex justify-center items-center text-lg font-semibold py-3 px-8 rounded-full mt-2">
+            לצפייה בעריסות שלנו ↓
+          </a>
+        </div>
+        <div class="soft-card rounded-[2rem] p-3 grid grid-cols-2 gap-3">
+          <img src="images/DSC_9076.jpg" alt="בד טורקיז של עריסת יעלי" class="w-full h-[300px] object-cover rounded-[1.5rem]">
+          <img src="images/DSC_9107.jpg" alt="בד צבעוני של עריסת יעלי" class="w-full h-[300px] object-cover rounded-[1.5rem]">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In Stock Catalog -->
+  <section id="catalog" class="py-20 px-5 bg-[#FFFDF9]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-medium mb-4">העריסות שלנו</h2>
+        <p class="text-xl text-[#716960]">בחרו את הדגם האהוב עליכם ולחצו להזמנה מהירה בוואטסאפ.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Product 1 -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-white border border-[#EEE6DA]">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE]">
+            <img src="images/DSC_9020.jpg" alt="עריסת פרפרי מנטה" class="w-full aspect-[4/5] object-cover object-center hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2">פרפרי מנטה</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-[#3E3933]">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20אשמח%20להזמין%20את%20עריסת%20'פרפרי%20מנטה'%20שראיתי%20באתר." target="_blank" class="btn px-5 py-2.5 rounded-full text-sm font-semibold">
+              הזמנה מהירה
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-white border border-[#EEE6DA]">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE]">
+            <img src="images/DSC_9073.jpg" alt="עריסת ספארי תכלת" class="w-full aspect-[4/5] object-cover object-center hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2">ספארי תכלת</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-[#3E3933]">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20אשמח%20להזמין%20את%20עריסת%20'ספארי%20תכלת'%20שראיתי%20באתר." target="_blank" class="btn px-5 py-2.5 rounded-full text-sm font-semibold">
+              הזמנה מהירה
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-white border border-[#EEE6DA]">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE] relative">
+            <img src="images/DSC_9084.jpg" alt="עריסת משבצות קלאסי" class="w-full aspect-[4/5] object-cover object-center hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2">משבצות קלאסי</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-[#3E3933]">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20אשמח%20להזמין%20את%20עריסת%20'משבצות%20קלאסי'%20שראיתי%20באתר." target="_blank" class="btn px-5 py-2.5 rounded-full text-sm font-semibold">
+              הזמנה מהירה
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-white border border-[#EEE6DA]">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE]">
+            <img src="images/DSC_9096.jpg" alt="עריסת פסים כתומים" class="w-full aspect-[4/5] object-cover object-center hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2">פסים כתומים (שקיעה)</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-[#3E3933]">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20אשמח%20להזמין%20את%20עריסת%20'פסים%20כתומים'%20שראיתי%20באתר." target="_blank" class="btn px-5 py-2.5 rounded-full text-sm font-semibold">
+              הזמנה מהירה
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-white border border-[#EEE6DA]">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE]">
+            <img src="images/DSC_9104.jpg" alt="עריסת חברים בספארי" class="w-full aspect-[4/5] object-cover object-center hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2">חברים בספארי</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-[#3E3933]">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20אשמח%20להזמין%20את%20עריסת%20'חברים%20בספארי'%20שראיתי%20באתר." target="_blank" class="btn px-5 py-2.5 rounded-full text-sm font-semibold">
+              הזמנה מהירה
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-white border border-[#EEE6DA]">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE]">
+            <img src="images/DSC_9115.jpg" alt="עריסת פרחי שמש" class="w-full aspect-[4/5] object-cover object-center hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2">פרחי שמש צהובים</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-[#3E3933]">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20אשמח%20להזמין%20את%20עריסת%20'פרחי%20שמש'%20שראיתי%20באתר." target="_blank" class="btn px-5 py-2.5 rounded-full text-sm font-semibold">
+              הזמנה מהירה
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-white border border-[#EEE6DA]">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE]">
+            <img src="images/DSC_9126.jpg" alt="עריסת פסי פסטל" class="w-full aspect-[4/5] object-cover object-center hover:scale-105 transition duration-700">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2">פסי פסטל</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-[#3E3933]">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20אשמח%20להזמין%20את%20עריסת%20'פסי%20פסטל'%20שראיתי%20באתר." target="_blank" class="btn px-5 py-2.5 rounded-full text-sm font-semibold">
+              הזמנה מהירה
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 8 (Out of stock) -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-stone-50 border border-stone-200 opacity-80">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE] relative">
+            <div class="absolute top-3 right-3 bg-stone-800 text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-lg">אזל מהמלאי</div>
+            <img src="images/DSC_8897.jpg" alt="עריסת חלום פסטלי" class="w-full aspect-[4/5] object-cover object-top grayscale-[40%]">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2 text-stone-500">חלום פסטלי</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-stone-400">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20ראיתי%20שעריסת%20'חלום%20פסטלי'%20אזלה%20מהמלאי.%20מתי%20היא%20צפויה%20לחזור?" target="_blank" class="bg-stone-200 text-stone-600 hover:bg-stone-300 transition px-5 py-2.5 rounded-full text-sm font-semibold">
+              מתי חוזר?
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 9 (Out of stock) -->
+        <div class="soft-card rounded-[2rem] p-4 flex flex-col bg-stone-50 border border-stone-200 opacity-80">
+          <div class="rounded-[1.5rem] overflow-hidden mb-5 photo bg-[#F8F4EE] relative">
+            <div class="absolute top-3 right-3 bg-stone-800 text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-lg">אזל מהמלאי</div>
+            <img src="images/DSC_8817.jpg" alt="עריסת פריחה אביבית" class="w-full aspect-[4/5] object-cover object-top grayscale-[40%]">
+          </div>
+          <h3 class="text-2xl font-medium mb-1 px-2 text-stone-500">פריחה אביבית</h3>
+          <p class="text-[#716960] px-2 mb-6 flex-grow">100% כותנה טבעית • חלון הצצה מובנה</p>
+          <div class="flex items-center justify-between px-2 pb-2">
+            <span class="text-2xl font-semibold text-stone-400">1,670 ₪</span>
+            <a href="https://wa.me/972500000000?text=היי,%20ראיתי%20שעריסת%20'פריחה%20אביבית'%20אזלה%20מהמלאי.%20מתי%20היא%20צפויה%20לחזור?" target="_blank" class="bg-stone-200 text-stone-600 hover:bg-stone-300 transition px-5 py-2.5 rounded-full text-sm font-semibold">
+              מתי חוזר?
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Grandma -->
+  <section class="py-20 px-5 bg-[#EEE6DA]">
+    <div class="max-w-6xl mx-auto">
+      <div class="soft-card rounded-[2rem] p-8 md:p-14 bg-[#FFFDF9]">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p class="eyebrow mb-4">גם אצל סבתא</p>
+              <h2 class="text-4xl md:text-5xl font-medium mb-6">הנכד מגיע? שתהיה לו עריסה גם אצלכם.</h2>
+              <p class="text-xl leading-relaxed text-[#716960]">
+                כשהיא מתקפלת בקלות ולא תופסת הרבה מקום, אפשר לשמור עריסה בבית
+                ולהיות מוכנים לביקורים של הנכדים — בלי להפוך חדר שלם לחדר תינוק.
+              </p>
+            </div>
+            <div>
+                <img src="images/DSC_8882.jpg" alt="עריסת יעלי מתקפלת" class="w-full h-[350px] md:h-[520px] object-cover object-top rounded-[1.5rem] photo">
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 md:py-28 px-5 bg-[#FFFDF9]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-[.8fr_1.2fr] gap-12 md:gap-20 items-center">
+        <div>
+          <img src="images/DSC_8992.jpg"
+               alt="יעל אחיטוב, יוצרת עריסות יעלי"
+               class="w-full max-w-md mx-auto aspect-square object-cover rounded-[2rem] photo">
+        </div>
+
+        <div>
+          <p class="eyebrow mb-4">מאחורי העריסה</p>
+          <h2 class="text-4xl md:text-5xl font-medium mb-7">יעלי עריסות זו אני.</h2>
+          <div class="text-xl leading-relaxed text-[#716960] space-y-5">
+            <p>
+              שמי יעל אחיטוב, אמא ל־9 ילדים וסבתא ל־24 נכדים.
+              הרעיון ליצור את העריסה נולד מתוך צורך אישי ומשפחתי.
+            </p>
+            <p>
+              כשלבני הבכור נולד ילדו השלישי, חיפשנו פתרון שייצור סביבה
+              נעימה ועוטפת לתינוק, מבלי להתפשר על האסתטיקה והסדר בבית.
+            </p>
+            <p>
+              בני שרטט סקיצה, ואני — שעבדתי שנים רבות בהוראת מלאכת־יד —
+              נעזרתי בכלים הביתיים שלי והכנתי את העריסה הראשונה.
+              ההתלהבות הייתה מיידית, וההזמנות לא איחרו לבוא.
+            </p>
+            <p>
+              מאז המשכתי לפתח ולדייק את הדגם, מתוך מחשבה על התינוק ועל ההורים.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust / CTA -->
+  <section id="contact" class="py-20 md:py-28 px-5 bg-[#68745F] text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-sm tracking-[.15em] uppercase text-[#E5E8E0] mb-5">רוצים להכיר את העריסה?</p>
+      <h2 class="text-4xl md:text-5xl font-medium text-white mb-6">
+        בואו נדבר.
+      </h2>
+      <p class="text-xl md:text-2xl leading-relaxed text-[#EEF0EA] mb-9">
+        נשמח לשלוח תמונות, דגמים, בדים, מחיר וכל מה שצריך כדי לבדוק אם זו העריסה שמתאימה לכם.
+      </p>
+
+      <a href="https://wa.me/972500000000?text=היי,%20ראיתי%20את%20העריסות%20באתר%20ואשמח%20לפרטים%20נוספים..."
+         class="inline-flex justify-center items-center bg-[#FFFDF9] text-[#68745F] text-lg font-semibold py-4 px-10 rounded-full hover:bg-white transition shadow-lg">
+        💬 לפרטים והזמנה בוואטסאפ
+      </a>
+
+      <p class="mt-7 text-sm text-[#DDE2D7]">יעלי עריסות · עריסות בעבודת יד</p>
+    </div>
+  </section>
+
+  <!-- Mobile CTA -->
+  <div class="sm:hidden fixed bottom-0 inset-x-0 z-50 bg-[#FFFDF9]/95 backdrop-blur border-t border-[#DDD4C8] p-3 floating-cta">
+    <a href="https://wa.me/972500000000?text=היי,%20ראיתי%20את%20העריסות%20באתר%20ואשמח%20לפרטים%20נוספים..."
+       class="btn block text-center py-3 rounded-full font-semibold">
+      לפרטים והזמנה בוואטסאפ
+    </a>
+  </div>
+
+</body>
+</html>
